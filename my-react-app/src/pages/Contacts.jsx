@@ -2,8 +2,10 @@
 
 const Contacts = () => {
   return (
-    <h1>Contacts</h1>
-  )
+    <div className="container">
+      <h1>Contacts</h1>
+    </div>
+  );
 }
 
 export default Contacts

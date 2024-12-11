@@ -1,11 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -13,11 +12,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 15px 8%;
+  border-bottom: 1px solid black;
 }
 
 .logo {
   font-weight: 800;
-  
 }
 .navbar ul {
   padding: 10px 30px;
@@ -31,7 +30,7 @@
   cursor: pointer;
 }
 
-/* From Uiverse.io by mrhyddenn */ 
+/* From Uiverse.io by mrhyddenn */
 button {
   position: relative;
   padding: 10px 20px;
@@ -65,7 +64,7 @@ button:hover::before {
 }
 
 button::before {
-  content: '';
+  content: "";
   display: block;
   width: 0px;
   height: 86%;
@@ -103,4 +102,10 @@ button:active {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
