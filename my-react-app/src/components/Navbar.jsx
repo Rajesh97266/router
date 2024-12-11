@@ -1,26 +1,27 @@
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar">
       <div className="logo">Rajesh Website</div>
       <ul>
-        <Link to="/">
+        <NavLink to="/" activeClassName="active">
           <li>Home</li>
-        </Link>
+        </NavLink>
 
-        <Link to="/products">
+        <NavLink to="/products">
           <li>Products</li>
-        </Link>
+        </NavLink>
 
-        <Link to="/about">
+        <NavLink to="/about">
           <li>About</li>
-        </Link>
-        <Link to="/contacts">
+        </NavLink>
+        <NavLink to="/contacts">
           <li>Contacts</li>
-        </Link>
+        </NavLink>
       </ul>
-      <button>Login</button>
+      <button onClick={() => navigate("login" , {replace: true})}>Login</button>
     </div>
   );
 };
