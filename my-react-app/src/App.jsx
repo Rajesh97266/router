@@ -15,6 +15,12 @@ import ContactLayout from "./layout/ContactLayout";
 import Info from "./components/Info";
 import Form from "./components/Form";
 import NotFound from "./pages/NotFound";
+import UserLayout from "./layout/UserLayout";
+import Users from "./pages/Users";
+import User from "./components/user";
+import { userLoader, userSingleLoader } from "./utils/UserLoader";
+import ErrorPage from "./components/ErrorPage";
+
 
 
 function App() {
@@ -30,6 +36,10 @@ function App() {
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="users" element={<UserLayout />} errorElement={<ErrorPage/> }>
+          <Route index="users" element={<Users />} loader={userLoader} />
+          <Route path=":id" element={<User/>} loader={userSingleLoader} />
+        </Route>
       </Route>
     )
   );

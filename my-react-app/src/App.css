@@ -118,3 +118,14 @@ button:active {
 .navbar a.active {
   color: teal; /* Active link will be teal */
 }
+
+.user {
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.users {
+
+  gap: 20px;
+}

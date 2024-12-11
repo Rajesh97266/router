@@ -20,8 +20,13 @@ const Navbar = () => {
         <NavLink to="/contacts">
           <li>Contacts</li>
         </NavLink>
+        <NavLink to="/users">
+          <li>Users</li>
+        </NavLink>
       </ul>
-      <button onClick={() => navigate("login" , {replace: true})}>Login</button>
+      <button onClick={() => navigate("login", { replace: true })}>
+        Login
+      </button>
     </div>
   );
 };
